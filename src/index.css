@@ -15,6 +15,8 @@ body {
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* Cards */
@@ -53,19 +55,25 @@ body {
 
 
 /* Header */
-.header, 
-.main {
+.header {
+  height: 80px;
   background-color: #efefef;
   padding: 20px 0;
 }
 
 /* Main */
+.main {
+  height: calc(100vh - 80px);
+  padding: 30px 0;
+  background-color: #efefef;
+}
+
 .description {
   padding: 20px;
 }
 
 .title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   padding-bottom: 10px;
 }
@@ -76,4 +84,11 @@ body {
   padding-bottom: 20px;
 }
 
-.btn 
+.btn {
+  display: inline-block;
+  border: 0;
+  background-color: #d8a525;
+  font-size: .8rem;
+  color: #ffffff;
+  padding: .8em 1.3em;
+}
